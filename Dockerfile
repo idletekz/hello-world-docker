@@ -1,4 +1,4 @@
-FROM golang:1.10 AS build-env
+FROM golang:1.13 AS build-env
 COPY . /app
 RUN cd /app && go build -o hello hello.go
 
